@@ -7,12 +7,8 @@ os.path.dirname(os.path.dirname(os.path.abspath(__file__)))       ##############
 
 # second method (long but intuitive)
 absolute_path = os.path.abspath(__file__)
-
-
 def find_parent(abs_path):
     return os.path.dirname(abs_path)
-
-
 HOME_1 = find_parent(find_parent(absolute_path))                  ##################### (Home dir is two levels up)
 
 
